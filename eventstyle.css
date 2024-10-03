@@ -1,0 +1,987 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend",sans-serif;
+
+}
+
+body {
+    font-family: "Lexend",sans-serif;
+    line-height: 1.6;
+    background-color: #171717;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 15px;
+}
+
+/* General Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 80%;
+    height: 3rem;
+    top: 1rem;
+    left: 10%;
+    padding: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        width: 100%;
+        left: 0%;
+        border-radius: 0rem;
+        top: 0rem;
+        padding: 1rem;
+        height: 3.5rem;
+    }
+}
+
+.nav-left {
+    height: 100%;
+}
+
+.nav-left img {
+    height: 100%;
+}
+
+.nav-middle {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #717171;
+    font-size: 18px;
+}
+
+.nav-right {
+    height: 100%;
+}
+
+.connect {
+    height: 100%;
+    background-color: #171717;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+    color: #eeeeee;
+}
+
+
+
+/* Hamburger menu (hidden by default for larger screens) */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 0.25rem;
+}
+
+/* Mobile Menu Panel */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #171717;
+    padding-top: 60px;
+    z-index: 1000;
+    transition: 1s ease-in-out;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu .close-btn {
+    position: absolute;
+    top: 2px;
+    right: 14px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .nav-middle,
+    .nav-right {
+        display: none; /* Hide the middle and right section for mobile */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on small screens */
+    }
+}
+
+/* Show the mobile menu when open */
+.mobile-menu.open {
+    display: flex;
+}
+
+/* Media Query for very small devices */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .nav-left img {
+        height: 100%; /* Adjust logo size for small devices */
+    }
+
+    .mobile-nav-item {
+        font-size: 16px;
+        margin-right: 0.25rem;
+        
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    width: 100%;
+    background: #171717;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        height: 70vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.hero-title {
+    color: white;
+    font-family: Lexend;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hero-title{
+        font-size: 50px;
+        line-height: 40px;
+    }
+}
+
+.htext1{
+    color: #3C8FFF;
+
+}
+.htext2{
+    color:#EF5350;
+}
+.htext3{
+    color:  #4CAF50;
+    
+
+}
+.hero-content{
+    width: 50%;
+    height: 100%;
+    padding-top: 5rem;
+    /* background-color: #000000; */
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content{
+        width: 100%;
+        padding: 6rem 1rem 0rem 1rem;
+    }
+}
+
+.hero-text{
+    padding-left: 10%;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hero-text{
+        padding-left: 0%;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.hero-subtitle {
+color:#FBBC04;
+font-family: Lexend;
+font-size: 20px;
+font-weight: 400;
+line-height: 31.25px;
+text-align: left;
+
+}
+
+@media (max-width: 768px) {
+    .hero-subtitle{
+        font-size: 16px;
+    }
+}
+
+.hero-sub2{
+    color: #eeeeee;
+}
+
+
+.hero-img{
+    width: 50%;
+    height: 100%;
+    /* background-color: #363636; */
+    background-image: url("globe.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-img{
+        width: 95%;
+        height: 100%;
+    }
+}
+.globe-img{
+    width: 702.5px;
+    height: 560px;
+    top: 296px;
+    left: 877px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-hero {
+    background-color: #1A73E8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Section Titles */
+.section-title {
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 75px;
+    color: #F2F2F2;
+    text-align: start;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    color: #eeeeee;
+    text-align: start;
+    /* margin-bottom: 30px; */
+}
+
+/* Events Section */
+.events-section {
+    padding: 70px 10vw;
+    background-image: url("teambg.png");
+    background-size: cover;
+    height: auto;
+    /* text-align: center; */
+}
+
+@media (max-width: 768px){
+    .events-section{
+        padding: 70px 1rem;
+    }
+}
+
+.events-cards {
+    /* display: flex;
+    justify-content: space-between;
+    margin: 30px 0; */
+    /* background-color: #0056b3; */
+    margin-top: 5rem;
+}
+
+/* Event Card Styling */
+.event-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 1200px; */
+}
+
+/* Card Image */
+.card-image {
+    width: 30%;  /* Adjust image width */
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 34px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Content */
+.card-content {
+    width: 70%;  /* Adjust content width */
+    padding: 20px;
+    /* background-color: #4CAF50; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-date-type {
+    color: #7a7a7a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-heading {
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "Lexend",sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Visit Button */
+.visit-btn {
+    padding: 16px 24px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.visit-btn:hover {
+    background-color: #0056b3;
+}
+
+.visit-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+/* Responsive Layout for Mobile Screens */
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .card-image, .card-content {
+        width: 100%;
+        margin: 0rem;
+        padding: 1rem;
+    }
+
+    .card-image img {
+        height: auto;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+    }
+
+    .card-heading {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .visit-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+.btn-main {
+    background: #FFFFFF;
+    color: #717171;
+    border: none;
+    padding: 7px 15px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-icon {
+ width: 40px;
+ display: flex;
+ align-items: center;
+text-align: center;
+ height: 35px;
+padding: 1px 3px 1px 3px;
+gap: 10px;
+border-radius: 46px;
+opacity: 0px;
+    
+}
+.btn-main span {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* YouTube Section */
+.youtube-section {
+    padding: 70px 10vw;
+    background: linear-gradient(180deg, #3C8FFF 0%, #0080FF 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+    text-align: center;
+    background-image: url("ytbg.png");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.ytsection-title {
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 75px;
+    color: #F2F2F2;
+    text-align: start;
+}
+
+.ytsection-subtitle {
+    color: #F2F2F2;
+    font-size: 20px;
+    text-align: start;
+}
+
+.youtube-cards {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.youtube-card {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Four cards in a row with spacing */
+    height: 319px;
+    margin: 10px; /* Add margin for spacing */
+    text-align: center;
+}
+
+.thumbnail {
+    background-color: #ddd;
+    height: 179px;
+    border-radius: 40px;
+    margin-bottom: 0px;
+}
+
+.video-title {
+    text-align: start;
+    padding: 0 0 0 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+.yt-icon {
+    width: 40px;
+    height: 35px;
+    padding: 1px 3px;
+    border-radius: 46px;
+}
+
+.ytpip-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+
+.btn-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 50px;
+}
+
+.card-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background: #E60023;
+    border: none;
+    padding: 4px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .youtube-card {
+        width: calc(50% - 20px); /* Two cards in a row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .youtube-card {
+        width: 100%; /* One card in a row on small screens */
+    }
+
+    .ytsection-title {
+        font-size: 40px; /* Adjust title size for mobile */
+    }
+
+    .ytsection-subtitle {
+        font-size: 16px; /* Adjust subtitle size for mobile */
+    }
+}
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 70px 10vw;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: #a7a7a7;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* First item spans 2 rows and 2 columns on larger screens */
+.item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: 3/2;
+}
+
+/* Responsive styles for smaller screens (mobile) */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-rows: repeat(5, 1fr); /* Increase number of rows for better spacing */
+    }
+
+    .item1 {
+        grid-column: span 2;
+        grid-row: span 2; /* First item still spans across two rows */
+        aspect-ratio: 3/2;
+    }
+
+    .grid-item {
+        font-size: 18px; /* Smaller font size for mobile */
+        padding: 15px;
+        aspect-ratio: 3/2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+        grid-template-rows: auto; /* Adapt rows dynamically */
+    }
+
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 1; /* No longer spans multiple rows/columns on mobile */
+    }
+
+    .grid-item {
+        font-size: 16px; /* Further reduced font size for small screens */
+        padding: 10px;
+    }
+}
+
+/* Team Section */
+.team-section {
+    padding: 70px 10vw;
+    background-image: url("teambg.png");
+    background-size: cover;
+    text-align: center;
+}
+
+/* Title Card */
+.title-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* padding: 20px; */
+    padding: 0rem 2rem;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Text content for the title card */
+.text-content {
+    width: 60%;
+    padding-bottom: 1rem;
+}
+
+.text-content h2 {
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 75px;
+    color: #363636;
+    text-align: start;
+}
+
+.text-content p {
+    font-size: 20px;
+    color: #717171;
+    text-align: start;
+    /* margin-bottom: 30px; */
+}
+
+.dude {
+    width: 35%; /* Adjust the size as necessary */
+    height: 20rem; /* Adjust the height */
+    background-image: url('dudes.png'); /* Ensure the correct path */
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Team Cards */
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 23%;
+    background-color: white;
+    padding: 0px;
+    border-radius: 50px;
+    text-align: start;
+    margin: 40px 0px 0px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-pic {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* background-color: #848484; */
+    /* border-radius: 25px 25px 0 0; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 34px;
+}
+
+.ppl-det {
+    padding: 0rem 1rem 0.5rem 1rem;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    /* font-weight: bold; */
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 32px;
+    color: gray;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+    /* Stack title card elements vertically */
+    .title-card {
+        flex-direction: column; /* Stack the elements */
+        text-align: center; /* Center the text */
+    }
+
+    .team-head {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-content {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .text-content h2 {
+        font-size: 48px;
+        padding: 0rem 1rem;
+        margin-bottom: 0px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        padding: 0rem 1rem;
+    }
+
+
+    .dude {
+        width: 100%;
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    /* Team card responsive */
+    .team-card {
+        width: 48%;
+    }
+}
+
+/* For smaller screens (up to 576px) */
+@media (max-width: 576px) {
+    /* Title card still stacked */
+    .title-card {
+        padding: 0rem;
+    }
+
+    .dude {
+        height: 175px; /* Smaller image for smaller screens */
+    }
+
+    /* Team cards stack as a single column */
+    .team-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* Adjust number of cards per row based on screen size */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .team-card {
+        width: 30%; /* 3 cards per row */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .team-card {
+        width: 48%; /* 2 cards per row */
+    }
+}
+
+@media (max-width: 575px) {
+    .team-card {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #171717;
+    color: #fff;
+    padding: 40px 10vw;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px;
+    max-width: 30%; /* Adjusting max-width for larger screens */
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center align columns */
+    }
+
+    .footer-column {
+        max-width: 100%; /* Full width on small screens */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .footer-logo {
+        width: 150px; /* Adjust logo size for smaller screens */
+    }
+
+    .footer-links {
+        text-align: center; /* Center links on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 5vw; /* Less padding on very small screens */
+    }
+
+    .footer-logo {
+        width: 100px; /* Further adjust logo size */
+    }
+
+    .footer-links li {
+        margin: 5px 0; /* Less margin for smaller screens */
+    }
+}
+
+

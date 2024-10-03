@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Developer Group</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="/"><img src="gdglogo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="nav-middle">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#events" class="nav-item">Event</a>
+            <a href="#team" class="nav-item">Team</a>
+            <a href="#gallery" class="nav-item">Gallery</a>
+        </div>
+        <div class="nav-right">
+            <div class="connect"><a style="text-decoration: none; color: whitesmoke;" href="mailto:example@example.com">Contact Us</a></div>
+        </div>
+        <!-- Hamburger menu for mobile -->
+        <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <!-- Mobile Menu Panel -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></div>
+        <a href="#home" class="mobile-nav-item">Home</a>
+        <a href="#events" class="mobile-nav-item">Event</a>
+        <a href="#team" class="mobile-nav-item">Team</a>
+        <a href="#gallery" class="mobile-nav-item">Gallery</a>
+        <a href="#contact" class="mobile-nav-item">Contact Us</a>
+    </div>
+
+    <!-- Add your other content here -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title htext1">GOOGLE </h1>
+                <h1 class="hero-title htext2">DEVELOPER </h1>
+                <h1 class="hero-title htext3">GROUPS </h1>
+                <p class="hero-subtitle"> On Campus <span class="hero-sub2">• Indian Institute of Information Technology Kalyani</span> </p>
+            </div>
+        </div> 
+        <div class="hero-img"></div>
+    </section>
+
+    
+
+    <!-- Upcoming Events Section -->
+    <section class="events-section" id="events">
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-subtitle">Join us for exciting upcoming events that bring the community together!</p>
+        
+        <div class="events-cards">
+            <div class="event-card card1">
+                <div class="card-image">
+                    <img src="intro_gdg.png" alt="Event Image">
+                </div>
+                <div class="card-content">
+                    <div class="top">
+                        <div class="card-date-type">
+                            <span class="event-date">October 15, 2024</span>
+                            <span class="event-type"> • Webinar</span>
+                        </div>
+                        <h2 class="card-heading">Upcoming Event: Web Development Trends</h2>
+                        <p class="card-description">
+                            Join us for an in-depth discussion on the latest trends in web development. Learn about modern tools and technologies that are transforming the way developers work, and get insights from industry experts.
+                        </p>
+                    </div>
+                    <div class="btm">
+                        <a href="event-details.html" class="visit-btn">Visit Event Page</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="event-card card2">
+                <div class="card-image">
+                    <img src="keploy.png" alt="Event Image">
+                </div>
+                <div class="card-content">
+                    <div class="top">
+                        <div class="card-date-type">
+                            <span class="event-date">October 15, 2024</span>
+                            <span class="event-type"> • Webinar</span>
+                        </div>
+                        <h2 class="card-heading">Upcoming Event: Web Development Trends</h2>
+                        <p class="card-description">
+                            Join us for an in-depth discussion on the latest trends in web development. Learn about modern tools and technologies that are transforming the way developers work, and get insights from industry experts.
+                        </p>
+                    </div>
+                    <div class="btm">
+                        <a href="event-details.html" class="visit-btn">Visit Event Page</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="event-card card3">
+                <div class="card-image">
+                    <img src="gen.png" alt="Event Image">
+                </div>
+                <div class="card-content">
+                    <div class="top">
+                        <div class="card-date-type">
+                            <span class="event-date">October 15, 2024</span>
+                            <span class="event-type"> • Webinar</span>
+                        </div>
+                        <h2 class="card-heading">Upcoming Event: Web Development Trends</h2>
+                        <p class="card-description">
+                            Join us for an in-depth discussion on the latest trends in web development. Learn about modern tools and technologies that are transforming the way developers work, and get insights from industry experts.
+                        </p>
+                    </div>
+                    <div class="btm">
+                        <a href="event-details.html" class="visit-btn">Visit Event Page</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="more-event">
+            <a href="events.html" class="visit-btn"><span><i class="fa-regular fa-calendar"></i></span>Visit Event Page</a>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+<section class="youtube-section">
+    <h2 class="ytsection-title">GDG YouTube </h2>
+        <p class="ytsection-subtitle">Join us for exciting upcoming events that bring the community together!</p>
+        
+        <div class="videos-cards">
+            <div class="video-card ytcr1">
+                <div class="yttmb">
+                    <img id="thumbnail1" src="" alt="Event Image">
+                </div>
+                <div class="card-content ytdic">
+                    <div class="top">
+                        <h2 class="card-heading">Rebase01 GDG IIIT Kalyani</h2>
+                        <p class="card-description">
+                            Join us for an in-depth discussion on the latest trends in web development. Learn about modern tools and technologies that are transforming the way developers work, and get insights from industry experts.
+                        </p>
+                    </div>
+                    <div class="btm">
+                        <a href="https://youtu.be/mJvjk68QKeA?si=JJoNLpYWxqJhWrgG" target="_blank" class="yttbn">Watch on youtube</a>
+                        <a href="event-details.html" class="ytpop"><i class="fa-solid fa-compress"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="video-card ytcr2">
+                <div class="yttmb">
+                    <img id="thumbnail2" src="" alt="Event Image" >
+                </div>
+                <div class="card-content ytdic">
+                    <div class="top">
+                        <h2 class="card-heading">AIML Session</h2>
+                        <p class="card-description">
+                            Join us for an in-depth discussion on the latest trends in web development. Learn about modern tools and technologies that are transforming the way developers work, and get insights from industry experts.
+                        </p>
+                    </div>
+                    <div class="btm">
+                        <a href="https://youtu.be/DVLodCvqfzM?si=w8ZLpKxNomStqTCE" target="_blank" class="yttbn">Watch on youtube</a>
+                        <a href="event-details.html" class="ytpop"><i class="fa-solid fa-compress"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="video-card ytcr3">
+                <div class="yttmb">
+                    <img id="thumbnail3" src="" alt="Event Image">
+                </div>
+                <div class="card-content ytdic">
+                    <div class="top">
+                        <h2 class="card-heading">Flutter Session </h2>
+                        <p class="card-description">
+                            Join us for an in-depth discussion on the latest trends in web development. Learn about modern tools and technologies that are transforming the way developers work, and get insights from industry experts.
+                        </p>
+                    </div>
+                    <div class="btm">
+                        <a href="https://youtu.be/UjWyAlKDQfg?si=ChOqXubfBtPuyx4a" target="_blank" class="yttbn">Watch on youtube</a>
+                        <a href="event-details.html" class="ytpop"><i class="fa-solid fa-compress"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="more-event">
+            <a href="https://www.youtube.com/@gdsciiitkalyani/videos" target="_blank" class="visit-btn ytvisit"><span><i class="fa-brands fa-youtube"></i></span>Visit Our YouTube Page</a>
+        </div>
+</section>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Take a look at some of our recent events and activities.</p>
+        <div class="grid-container">
+            <div class="grid-item item1 gal1"><div class="large"></div></div>
+            <div class="grid-item gal2"><div class="item2"></div></div>
+            <div class="grid-item gal3"><div class="item3"></div></div>
+            <div class="grid-item gal4"><div class="item4"></div></div>
+            <div class="grid-item gal5"><div class="item5"></div></div>
+            <div class="grid-item gal6"><div class="item6"></div></div>
+            <div class="grid-item gal7"><div class="item7"></div></div>
+            <div class="grid-item gal8"><div class="item8"></div></div>
+            <div class="grid-item gal9"><div class="item9"></div></div>
+        </div>
+        <div class="more-event">
+            <a href="gallery.html" class="visit-btn gallery-btn"><span><i class="fa-regular fa-image"></i></span>Visit Gallery Section</a>
+        </div>
+    </section>
+
+    <section class="marq">
+        <div class="sep">
+            <div class="sep-marquee">
+                <div class="sep-marquee-item">  DESIGN <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="sep-marquee-item">  CODE <i class="fa-solid fa-laptop-code"></i></div>
+                <div class="sep-marquee-item">  BUILD <i class="fa-regular fa-hand-peace"></i></div>
+                <div class="sep-marquee-item">  SLEEP <i class="fa-solid fa-bed"></i></div>
+            </div>
+            <div class="sep-marquee">
+                <div class="sep-marquee-item">  DESIGN <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="sep-marquee-item">  CODE <i class="fa-solid fa-laptop-code"></i></div>
+                <div class="sep-marquee-item">  BUILD <i class="fa-regular fa-hand-peace"></i></div>
+                <div class="sep-marquee-item">  SLEEP <i class="fa-solid fa-bed"></i></div>
+            </div>
+            <div class="sep-marquee">
+                <div class="sep-marquee-item">  DESIGN <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="sep-marquee-item">  CODE <i class="fa-solid fa-laptop-code"></i></div>
+                <div class="sep-marquee-item">  BUILD <i class="fa-regular fa-hand-peace"></i></div>
+                <div class="sep-marquee-item">  SLEEP <i class="fa-solid fa-bed"></i></div>
+            </div>
+            <div class="sep-marquee">
+                <div class="sep-marquee-item">  DESIGN <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="sep-marquee-item">  CODE <i class="fa-solid fa-laptop-code"></i></div>
+                <div class="sep-marquee-item">  BUILD <i class="fa-regular fa-hand-peace"></i></div>
+                <div class="sep-marquee-item">  SLEEP <i class="fa-solid fa-bed"></i></div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="title-card">
+            <div class="text-content">
+                <h2>Our Team</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+            <div class="dude"></div>
+        </div>
+        
+        <div class="team-cards">
+            <div class="team-card tc1">
+                <div class="profile-pic">
+                    <img src="lead.png" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>Lead</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="team-card tc2">
+                <div class="profile-pic">
+                    <img src="co-lead.jpg" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>Co - Organiser</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="team-card tc3">
+                <div class="profile-pic">
+                    <img src="mentor.jpeg" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>Mentor</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="team-card tc4">
+                <div class="profile-pic">
+                    <img src="me.jpg" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>UX/UI Lead</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="team-card tc5">
+                <div class="profile-pic">
+                    <img src="creative.jpg" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>Web-Dev Lead</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="team-card tc6">
+                <div class="profile-pic">
+                    <img src="sexnik.jpg" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>Creative Lead</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="team-card tc7">
+                <div class="profile-pic">
+                    <img src="ai.jpg" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>AIML Lead</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="team-card tc8">
+                <div class="profile-pic">
+                    <img src="android.gif" alt="Profile Picture">
+                </div>
+                <div class="ppl-det">
+                    <h3>NAME</h3>
+                    <h3>SUBNAME</h3>
+                    <p>Android Lead</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            
+            <!-- Repeat similar cards for other team members -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- First Column: Logo -->
+            <div class="footer-column logo-column">
+                <img src="gdg_logo.png" alt="Company Logo" class="footer-logo">
+                <p>© 2024 Your Company Name. All rights reserved.</p>
+            </div>
+
+            <!-- Second Column: Quick Links -->
+            <div class="footer-column links-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#"> > About</a></li>
+                    <li><a href="#"> > Chapters</a></li>
+                    <li><a href="#"> > Upcoming Events</a></li>
+                    <li><a href="#"> > Participation Terms</a></li>
+                    <li><a href="#"> > Privacy Policy</a></li>
+                    <li><a href="#"> > Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Third Column: Social Links -->
+            <div class="footer-column social-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
