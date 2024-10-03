@@ -15,7 +15,7 @@
 @keyframes SCROLL_REVEALX {
     from{
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(15px);
     }
     to{
         opacity: 1;
@@ -25,7 +25,7 @@
 @keyframes SCROLL_REVEAL3D{
     from{
         opacity: 0;
-        transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.1, 1.2, 1.2);
         }
     to{
         opacity: 1;
@@ -373,8 +373,8 @@ text-align: left;
 
 /* Events Section */
 .events-section {
-    border-top-left-radius: 50px 50px;
-    border-top-right-radius: 50px 50px;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
     padding: 5rem 10vw;
     /* text-align: center; */
     background-color: #eeeeee;
