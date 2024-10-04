@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Developer Group</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +17,8 @@
         <div class="nav-middle">
             <a href="#home" class="nav-item">Home</a>
             <a href="#events" class="nav-item">Event</a>
-            <a href="#team" class="nav-item">Team</a>
             <a href="#gallery" class="nav-item">Gallery</a>
+            <a href="#team" class="nav-item">Team</a>
         </div>
         <div class="nav-right">
             <div class="connect"><a style="text-decoration: none; color: whitesmoke;" href="mailto:example@example.com">Contact Us</a></div>
@@ -43,17 +44,27 @@
     
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title htext1">GOOGLE </h1>
-                <h1 class="hero-title htext2">DEVELOPER </h1>
-                <h1 class="hero-title htext3">GROUPS </h1>
-                <p class="hero-subtitle"> On Campus <span class="hero-sub2">• Indian Institute of Information Technology Kalyani</span> </p>
+    <section class="hero-section">
+        <div class="hero-text">
+            <div class="brand-logo">
+                <h1>WE ARE</h1>
             </div>
-        </div> 
-        <div class="hero-img"></div>
+            <div class="brand-quote">
+                <h2>GDG<span> On Campus </span> • Indian Institute of Information Technology Kalyani</h2>
+            </div>
+        </div>
+        
+        <!-- <div class="buttons">
+            <button class="btn play-video">Play Video</button>
+            <button class="btn learn-more">Learn More</button>
+        </div> -->
+        <div class="cards-container">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+        </div>
     </section>
+    <script src="card.js"></script>
 
     
 
