@@ -290,15 +290,21 @@ h1, h2, h3, p {
 
 /* Specific colors for cards */
 #card1 {
-    background-color: #ffddc1;
+    background-image: url("c1.png");
+    background-position: center;
+    background-size: contain;
 }
 
 #card2 {
-    background-color: #ffb6c1;
+    background-image: url("c2.png");
+    background-position: center;
+    background-size: contain;
 }
 
 #card3 {
-    background-color: #add8e6;
+    background-image: url("c3.png");
+    background-position: center;
+    background-size: contain;
 }
 
 /* For larger screens */
