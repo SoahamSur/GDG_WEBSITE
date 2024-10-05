@@ -32,15 +32,15 @@ function setInitialPositions() {
 function shuffleCards() {
     setTimeout(() => {
         swapPositions(card1, card2);
-    }, 1000);
+    }, 1000);  // First swap after 1 second
 
     setTimeout(() => {
         swapPositions(card2, card3);
-    }, 2000);
+    }, 2000);  // Second swap after 2 seconds
 
     setTimeout(() => {
         swapPositions(card3, card1);
-    }, 3000);
+    }, 3000);  // Third swap after 3 seconds
 }
 
 // Swap card positions and update tilt and size
@@ -81,7 +81,10 @@ function updateTiltAndSize(card) {
 
 // Initialize and start shuffling
 setInitialPositions();
-setInterval(shuffleCards, 4000);
+setTimeout(shuffleCards, 0);  // Start shuffling after 0 second
+
+// Shuffle every 4 seconds (same speed as before)
+setInterval(shuffleCards, 4000);  // Shuffle interval is still 4 seconds
 
 // Update positions when resizing the window
 window.addEventListener('resize', setInitialPositions);
