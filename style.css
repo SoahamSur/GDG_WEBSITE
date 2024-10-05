@@ -59,10 +59,10 @@ h1, h2, h3, p {
     align-items: center;
     background-color: rgb(255, 255, 255);
     position: fixed;
-    width: 80%;
+    width: 60%;
     height: 3.5rem;
     top: 1rem;
-    left: 10%;
+    left: 20%;
     padding: 0.25rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     border-radius: 3rem;
@@ -206,6 +206,7 @@ h1, h2, h3, p {
     padding: 4.5rem 0rem 0rem 0rem;
     background-color: #171717;
     height: 95vh;
+    background-image: url("hero_new_bg.svg");
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -213,6 +214,8 @@ h1, h2, h3, p {
 @media (max-width: 767px){
     .hero-section {
         height: 60vh;
+        background-image: url("hero_phone_bg.svg");
+
     }
 }
 
@@ -282,7 +285,7 @@ h1, h2, h3, p {
     aspect-ratio: 1/1.4;
     margin: 0 20px;
     background-color: #f3f3f3;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: absolute;
     transition: all 0.8s ease-in-out;
@@ -290,19 +293,19 @@ h1, h2, h3, p {
 
 /* Specific colors for cards */
 #card1 {
-    background-image: url("c1.png");
+    background-image: url("c1.svg");
     background-position: center;
     background-size: contain;
 }
 
 #card2 {
-    background-image: url("c2.png");
+    background-image: url("c2.svg");
     background-position: center;
     background-size: contain;
 }
 
 #card3 {
-    background-image: url("c3.png");
+    background-image: url("c3.svg");
     background-position: center;
     background-size: contain;
 }
@@ -716,7 +719,7 @@ h1, h2, h3, p {
     padding: 5rem 10vw;
     background: linear-gradient(180deg, #3C8FFF 0%, #0080FF 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-    background-image: url("ytbg.png");
+    background-image: url("yt_new_bg.svg");
     background-size: cover;
     width: 100%;
     height: auto;
@@ -725,7 +728,7 @@ h1, h2, h3, p {
 @media (max-width: 768px){
     .youtube-section {
         padding: 2rem 1rem;
-        background-image: url("ytbgm.png");
+        background-image: url("yt_phone_bg.svg");
         background-size: cover;
     }
 }
@@ -813,7 +816,7 @@ h1, h2, h3, p {
 /* Gallery Section */
 .gallery-section {
     padding: 5rem 10vw;
-    background-image: url("gallery_bg.png");
+    background-image: url("gallery_new_bg.svg");
     background-size: cover;
     text-align: center;
 }
@@ -821,7 +824,7 @@ h1, h2, h3, p {
 @media (max-width: 768px){
     .gallery-section{
         padding: 2rem 1rem;
-        background-image: url("gallery_bgm.png");
+        background-image: url("gallery_phone_bg.svg");
         background-size: cover;
     }
 }
@@ -1119,7 +1122,7 @@ h1, h2, h3, p {
 /* Team Section */
 .team-section {
     padding: 7rem 10vw 5rem 10vw;
-    background-image: url("teambg.png");
+    background-image: url("team_new_bg.svg");
     background-size: cover;
     text-align: center;
 }
@@ -1182,7 +1185,7 @@ h1, h2, h3, p {
 @media (max-width: 768px){
     .team-section{
         padding: 2rem 1rem;
-        background-image: url("teambgm.png");
+        background-image: url("team_phone_bg.svg");
         background-size: cover;
     }
 }
