@@ -332,6 +332,8 @@ text-align: left;
 
 @media (max-width: 768px){
     .events-section{
+        background-image: url("hero_phone_bg.svg");
+        background-size: cover;
         padding: 70px 1rem;
     }
 }
