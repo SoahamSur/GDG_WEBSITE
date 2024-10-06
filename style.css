@@ -94,8 +94,7 @@ h1, h2, h3, p {
     gap: 30px;
 }
 .nav-middle a:hover{
-    color: #171717;
-    font-weight: 500;   
+    color: #4285f4;  
     transition: 0.5s ease-in-out;
 }
 .nav-item {
