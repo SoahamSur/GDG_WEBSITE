@@ -207,6 +207,7 @@ h1, h2, h3, p {
     background-color: #171717;
     height: 95vh;
     background-image: url("hero_new_bg.svg");
+    background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
 }
